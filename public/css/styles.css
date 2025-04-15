@@ -1,0 +1,138 @@
+*{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* Variables de color */
+:root{
+  --color_americas:#6922c7;
+  --color_texto_botones:#F8FAFC;
+  --color_hover_botones:#915c8e;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #132453;
+  }
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+  }
+  h2 {
+    text-align: center;
+    color: #333;
+    clear: left; /* Asegura que el título no se superponga con la imagen */
+  }
+  label {
+    font-weight: bold;
+  }
+  select, input[type="text"], input[type="email"], input[type="date"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  textarea {
+    height: 100px;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  .hidden {
+    display: none;
+  }
+  /* Estilos generales */
+  .hidden {
+  display: none;
+  }
+  table {
+  border-collapse: collapse;
+  width: 100%;
+  }
+  th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+  }
+  th {
+  background-color: #f2f2f2;
+  }
+
+  /* Estilos para inputs y textareas */
+  input, textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  }
+
+  /* Estilos para inputs tipo file */
+  input[type="file"] {
+  padding: 0;
+  }
+
+  .logo {
+      width: 200px; /* Define el ancho deseado */
+      height: auto;/* Esto mantiene la proporción de la imagen */
+      /* float: left;
+      margin-right: 20px;  */
+  }
+  .container .firmas{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+    gap: 7px;
+
+  }
+  .b-finales{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .b-anchof{
+    width: 200px;
+  }
+
+  .enlaces{
+    text-decoration: none;
+    font-size: 18px;
+    color:var(--color_texto_botones);
+    cursor: pointer;
+    transition: color 0.1s ease-in;
+  }
+  .enlaces:hover{
+    color: var(--color_hover_botones);
+  }
+  .cabeceras_tabla th{
+    background-color: var(--color_americas);
+    color: aliceblue;
+  }
+  .morado_boton{
+    border-color: none;
+    color: var(--color_texto_botones);
+    transition: background-color 0.3s ease-in;
+    background-color: var(--color_americas);
+  }
+  .morado_boton:hover{
+    background-color: var(--color_texto_botones);
+    color: var(--color_hover_botones);
+  }
+  .morado_boton:active{
+    background-color: var(--color_texto_botones);
+    color: var(--color_hover_botones);
+  }
